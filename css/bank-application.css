@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* 下層ページの基本レイアウト */
+.lower-main {
+  padding: 80px 0 100px;
+  background-color: #f3f1ee;
+}
+/* 下層ページの見出しグループ */
+.lower-heading-group {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  margin: 0 0 40px;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  } 
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
+/* フォーム全体の枠組み */
+.form-box {
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.08);
+  /* 各入力項目 */
+  .form-item {
+    display: grid;
+    gap: 10px;
+    + .form-item {
+      margin-top: 30px;
+    }
+    label {
+      font-size: 14px;
+    }
+    input,
+    textarea {
+      border: 1px solid #aaa;
+      padding: 0.8em 0.5em;
+      border-radius: 8px;
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      font-size: 16px;
+      display: inline-block;
+      color: #fff;
+      background-color: #315dfa;
+      border: none;
+      padding: 1em 2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: #004098;
+      }
+    }
+    .required {
+      background-color: #d14f97;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+      font-weight: normal;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 25px;
+
+      label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+    }
+    .consent-checkbox {
+      text-align: center;
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+      }
+      a {
+        color: #315dfa;
+        text-decoration: underline;
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    }
+  }
+}

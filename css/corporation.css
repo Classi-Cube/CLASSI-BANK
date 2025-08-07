@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.corporate-hero {
+  background-color: #001e5099;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+/* サービス一覧セクション (#services) */
+#services {
+  .accordion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      &:first-child {
+        border-top: 1px solid #ddd;
+      }
+      &.active {
+        .accordion-icon {
+          transform: rotate(45deg);
+        }
+      }
+      .accordion-header {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        padding: 25px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        text-align: left;
+        .accordion-title {
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .accordion-icon {
+          font-size: 2rem;
+          font-weight: 300;
+          color: #315dfa;
+          transition: transform 0.3s;
+        }
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        padding: 0 20px;
+        p {
+          margin-bottom: 20px;
+          line-height: 1.8;
+          color: #333;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+          color: #333;
+        }
+        li {
+          padding-left: 1.5em;
+          text-indent: -1.5em;
+          margin-bottom: 10px;
+          &::before {
+            content: '✓';
+            color: #315dfa;
+            margin-right: 0.5em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+/* 導入事例セクション */
+.case-studies {
+  background-color: #f0f4f8;
+  .case-study-item {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+/* 左右反転用クラス */
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+    .case-image {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        display: block;
+      }
+    }
+    .case-text {
+      flex: 1;
+      .case-company {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        color: #222;
+      }
+      p {
+        line-height: 1.8;
+        color: #333;
+      }
+    }
+  }
+}

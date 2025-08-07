@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bank-application.css">
+  <title>予約を始める - CLASSI BANK</title>
+</head>
+<body>
+  <!-- -----------------------------ヘッダー----------------------------- -->
+  <header>
+    <div class="header-top">
+      <div class="logo-group">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="my-logo">
+        </a>
+        <a href="index.html" class="sakura-logo">
+    
+          <img src="img/sakura-logo.jpg" alt="sakura-financial-group">
+        </a>
+        <p class="bank-code">金融機関コード:810</p>
+      </div>
+      <!-- 上の段のナビゲーション -->
+      <nav class="sub-nav">
+        <ul>
+          <li><a href="index.html">当店について</a></li>
+          <li><a href="index.html#service">サービス</a></li>
+          <li><a href="index.html#pickup">ピックアップコンテンツ</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-nav">
+      <!-- 下の段のナビゲーション -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">個人のお客様</a></li>
+          <li><a href="corporation.html">法人のお客様</a></li>
+          <li><a href="CLASSI-BANK.html">CLASSI BANKについて</a></li>
+          <li><a href="employee.html">社員雇用情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ----------------申し込みフォーム専用メインコンテンツ----------------- -->
+  <main class="lower-main">
+    <div class="container">
+      <div class="lower-heading-group">
+        <h2>予約お申し込み</h2>
+        <p>以下のフォームに必要事項をご入力の上、送信してください。</p>
+      </div>
+      <form class="form-box" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="sf_bcj3m9fn6m17jl7labe5dl86">
+        <input type="hidden" name="redirectTo" value="index.html">
+        <!-- お名前 -->
+        <div class="form-item">
+          <label for="name">お名前 <span class="required">必須</span></label>
+          <input type="text" id="name" name="name" placeholder="例：佐藤　一郎" required>
+        </div>
+        <!-- フリガナ -->
+        <div class="form-item">
+          <label for="furigana">フリガナ <span class="required">必須</span></label>
+          <input type="text" id="furigana" name="furigana" placeholder="例：サトウ　イチロウ" required>
+        </div>
+        <!-- メールアドレス -->
+        <div class="form-item">
+          <label for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" placeholder="例：example@example.com" required>
+        </div>
+        <!-- 電話番号 -->
+        <div class="form-item">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+        </div>
+        <!-- ご住所 -->
+        <div class="form-item">
+          <label for="address">ご住所 <span class="required">必須</span></label>
+          <input type="text" id="address" name="address" placeholder="例：〒100-0000 異世界 CLASSIビル" required>
+        </div>
+        <!-- お申し込みのきっかけ -->
+        <div class="form-item">
+          <label for="reason">お申し込みのきっかけ（複数選択可）</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="reason" value="web"> Webサイトを見て</label>
+            <label><input type="checkbox" name="reason" value="sns"> SNSを見て</label>
+            <label><input type="checkbox" name="reason" value="friend"> 友人・知人の紹介</label>
+            <label><input type="checkbox" name="reason" value="other"> その他</label>
+          </div>
+        </div>
+        <!-- 送信ボタン -->
+        <div class="form-item">
+          <button type="submit">入力内容を確認する</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <!-- -----------------------------フッター----------------------------- -->
+  <footer>
+    <a href="index.html" class="logo">
+          <img src="img/white-logo.png" alt="my-logo">
+    </a>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="index.html#about">当店について</a></li>
+        <li><a href="index.html#service">サービス</a></li>
+        <li><a href="index.html#pickup">ピックアップコンテンツ</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">&copy; 2025 CLASSI BANK</p>
+  </footer>
+</body>
+</html>

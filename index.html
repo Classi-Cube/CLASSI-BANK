@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <title>CLASSI BANK</title>
+</head>
+
+<body>
+  <!-- -----------------------------警告------------------------------->
+  <section class="warning">
+    <div class="warning-bar" id="warning-bar">
+      <p>警告:このサイトは偽サイトです。実際のサービスとは一切関係ありません。</p>
+      <button class="close-btn" id="close-btn">✖</button>
+    </div>
+  </section> 
+  <!-- -----------------------------ヘッダー----------------------------- -->
+  <header>
+    <div class="header-top">
+      <div class="logo-group">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="my-logo">
+        </a>
+        <a href="index.html" class="sakura-logo">
+    
+          <img src="img/sakura-logo.jpg" alt="sakura-financial-group">
+        </a>
+        <p class="bank-code">金融機関コード:810</p>
+      </div>
+      <!-- 上の段のナビゲーション -->
+      <nav class="sub-nav">
+        <ul>
+          <li><a href="index.html#about">当店について</a></li>
+          <li><a href="index.html#service">サービス</a></li>
+          <li><a href="index.html#pickup">ピックアップコンテンツ</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-nav">
+      <!-- 下の段のナビゲーション -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">個人のお客様</a></li>
+          <li><a href="corporation.html">法人のお客様</a></li>
+          <li><a href="CLASSI-BANK.html">CLASSI BANKについて</a></li>
+          <li><a href="employee.html">社員雇用情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- -----------------------------ヒーローセクション----------------------------- -->
+  <section class="hero">
+    <div class="grid">
+      <div class="left">
+        <div class="free-ribbon">
+          入会費<br>！無料！
+        </div>
+        <h1>CLASSI BANKに<br>お金を預けてみませんか？</h1>
+        <p class="campaign-title">口座開設・振込<br>キャンペーン</p>
+        <div class="campaign-box">
+          <p class="campaign-text">抽選で最大<span class="large-text">10</span>万円分の<br>ポイントをプレゼント!</p>
+          <div class="point-icon">P</div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="img/gold.jpg" alt="金の延べ棒">
+      </div>
+    </div>
+    <a href="#about"><img src="img/down.png" alt="下へスクロール"></a>
+  </section>
+  <!-- -----------------------------メイン----------------------------- -->
+  <main>
+    <!-- ---------------------------当店について--------------------------- -->
+    <section class="main-section about" id="about">
+      <div class="container">
+        <div class="heading-group">
+          <h2>
+            About Us
+            <span>当店について</span>
+          </h2>
+        </div>
+        <div class="layout">
+          <div class="image">
+            <img src="img/explanation.jpg" alt="当店のキャッシュカードの画像">
+          </div>
+          <div class="text">
+            <img src="img/logo.svg" alt="当店のロゴ">
+            <h3>未来を託せる信頼の銀行</h3>
+            <p>
+              CLASSI BANKは、お客様の大切な資産を、確かな信頼と安心の
+              <br>もとでお預かりする銀行です。
+              <br><br>最新のセキュリティ技術と確かな運営体制で、お客様一人ひとり
+              <br>に寄り添い、理想の未来を実現するためのサポートを行います。
+              <br><br>安心・安全を何よりも大切に、信頼できる金融機関として、
+              <br>皆さまの「未来を託せる」場所であり続けます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------サービス----------------------------- -->
+    <section class="main-section service" id="service">
+      <div class="container">
+        <div class="heading-group">
+          <h2>
+            Service
+            <span>サービス</span>
+          </h2>
+        </div>
+        <div class="service-menu" id="service-menu"></div>
+      </div>
+    </section>
+    <!-- ---------------------------ピックアップコンテンツ----------------------------- -->
+    <section class="main-section pickup" id="pickup">
+      <div class="container">
+        <div class="heading-group2">
+          <h2>
+            Pickup
+            <span>ピックアップコンテンツ</span>
+          </h2>
+        </div>
+        <div class="slider-container">
+          <div class="slider-window">
+            <div class="slider-track" id="slider-track"></div>
+          </div>
+          <button class="slider-button prev" id="prev-btn"></button>
+          <button class="slider-button next" id="next-btn"></button>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------お問い合わせ----------------------------- -->
+    <section class="main-section contact" id="contact">
+      <div class="container">
+        <div class="heading-group">
+          <h2>Contact</h2>
+          <span>お問い合わせ</span>
+        </div>
+        <p>ご不明点等あれば、お気軽にお問い合わせください</p>
+        <div class="layout">
+          <div class="tel">
+            <p class="label">電話でお問い合わせ</p>
+            <a href="tel:0000000000" class="number">
+              <img src="img/phone.svg" alt="電話アイコン">
+              000-0000-000
+            </a>
+            <p class="hour">受付時間: 0:00~23:00 (土日定休日) </p>
+          </div>
+          <div class="form">
+            <p class="label">フォームでお問い合わせ</p>
+            <a href="contact.html" class="button">お問い合わせフォームへ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- -----------------------------フッター----------------------------- -->
+  <footer>
+    <a href="index.html" class="logo">
+          <img src="img/white-logo.png" alt="my-logo">
+    </a>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="index.html#about">当店について</a></li>
+        <li><a href="index.html#service">サービス</a></li>
+        <li><a href="index.html#pickup">ピックアップコンテンツ</a></li>
+        <li><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">&copy; 2025 CLASSI BANK</p>
+  </footer>
+</body>
+
+</html>

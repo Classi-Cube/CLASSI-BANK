@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.lower-hero {
+  background-color: #315dfab3;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  .lower-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lower-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+/* メインコンテンツエリア */
+.lower-main-content {
+  padding: 80px 0;
+}
+/* リード文エリア */
+.lead-text-area {
+  text-align: center;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+}
+/* サービス一覧グリッドセクション */
+.other-services-section {
+  margin-bottom: 100px;
+  .other-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  .other-service-card {
+    background-color: #f9f9f9;
+    border: 2px solid #b3b3b3;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .os-icon {
+      border: 2px solid #315dfa;
+      background-color: #f9f9f9;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+      flex-grow: 1;
+    }
+  }
+}
+/* CTA（行動喚起）セクション */
+.cta-section {
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  padding: 60px;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 15px 0 30px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #d14f97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover {
+      background-color: #315dfa;
+      transform: translateY(-5px);
+    }
+  }
+}

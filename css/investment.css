@@ -1,0 +1,221 @@
+@charset "UTF-8";
+.lower-hero {
+  background-color: #315dfab3;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  .lower-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lower-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+/* ファーストビュー */
+.investment-first-view {
+  background-color: #f0f4f8;
+  padding: 60px 0;
+  .fv-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .fv-text {
+    flex: 1.2;
+    h2 {
+      font-size: 2.8rem;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin: 20px 0 30px;
+    }
+  }
+  .fv-image {
+    flex: 1;
+    text-align: center;
+    img {
+      max-width: 250px;
+      width: 100%;
+    }
+  }
+}
+/* 「投資信託とは？」セクション */
+.intro-section {
+  margin-bottom: 100px;
+  .intro-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .intro-image {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+  .intro-text {
+    flex: 1.2;
+    p {
+      line-height: 1.8;
+      color: #333;
+      + p {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+/* メインコンテンツエリア */
+.lower-main-content {
+  padding: 80px 0;
+}
+/* 幅が狭いコンテナ */
+.container.narrow {
+  max-width: 800px;
+}
+/* 各セクションのタイトル */
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #d14f97;
+    border-radius: 2px;
+  }
+}
+/* モデルプラン紹介セクション */
+.plans-section {
+  margin-bottom: 100px;
+  .section-lead {
+    text-align: center;
+    max-width: 600px;
+    margin: -40px auto 40px;
+    line-height: 1.7;
+  }
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  .plan-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .plan-header {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+    .plan-body {
+      padding: 30px;
+      flex-grow: 1;
+      h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .plan-description {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.7;
+        height: 80px;
+      }
+      .plan-for {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+        text-align: center;
+        color: #333;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+/* NISA活用セクション */
+.nisa-section {
+  background-color: #fff3cd;
+  border-radius: 15px;
+  padding: 50px;
+  margin-bottom: 100px;
+  .nisa-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .nisa-text {
+    flex: 1;
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  }
+}
+/* CTAボタンの調整 */
+.cta-button {
+  small {
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+  }
+}
+/* CTA（行動喚起）セクション */
+.cta-section {
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  padding: 60px;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 15px 0 30px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #d14f97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover {
+      background-color: #315dfa;
+      transform: translateY(-5px);
+    }
+  }
+}

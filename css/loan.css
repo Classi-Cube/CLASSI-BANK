@@ -1,0 +1,179 @@
+@charset "UTF-8";
+.lower-hero {
+  background-color: #315dfab3;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  .lower-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lower-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+/* メインコンテンツエリア */
+.lower-main-content {
+  padding: 80px 0;
+}
+/* 幅が狭いコンテナ */
+.container.narrow {
+  max-width: 800px;
+}
+/* 各セクションのタイトル */
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #d14f97;
+    border-radius: 2px;
+  }
+}
+/* リード文エリア */
+.lead-text-area {
+  text-align: center;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+}
+/* 目的別ローン紹介セクション */
+.loan-products-section {
+  margin-bottom: 100px;
+  .loan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  .loan-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 2px solid #b3b3b3;
+    .loan-icon img {
+      height: 60px;
+    }
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+    }
+  }
+}
+/* ご契約までの流れセクション */
+.loan-flow-section {
+  margin-bottom: 100px;
+  .loan-flow-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    counter-reset: flow-counter;
+    position: relative;
+    > li + li::before {
+      content: '▶';
+      position: absolute;
+      left: -27px;
+      top: 110px;
+      color: #d14f97;
+      font-size: 1.5rem;
+    }
+  }
+  .loan-flow-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 31%;
+    position: relative;
+    .step-num {
+      background-color: #315dfa;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: -60px auto 20px;
+      border: 4px solid white;
+    }
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+      text-align: left;
+    }
+  }
+}
+/* 返済シミュレーションCTAセクション */
+.simulation-section {
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  padding: 50px;
+  .simulation-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .simulation-text {
+    flex-grow: 1;
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.7;
+      color: #555;
+    }
+  }
+  .simulation-button-area {
+    flex-shrink: 0;
+    text-align: center;
+  }
+}
+.cta-button {
+    display: inline-block;
+    background-color: #d14f97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover {
+      background-color: #315dfa;
+      transform: translateY(-5px);
+    }
+  }

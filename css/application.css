@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.lower-hero {
+  background-color: #315dfab3;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  .lower-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lower-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+/* ファーストビューセクション */
+.app-first-view {
+  background-color: #f0f4f8;
+  padding: 60px 0;
+  .fv-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .fv-text {
+    flex: 1;
+    h2 {
+      font-size: 2.8rem;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin: 20px 0 30px;
+    }
+  }
+  .fv-image {
+    flex: 1;
+    text-align: right;
+    img {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}
+/* 主な機能セクション */
+.features-section {
+  margin-bottom: 100px;
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px 40px;
+  }
+  .feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .feature-icon {
+    img {
+      height: 40px;
+      margin-top: 5px;
+    }
+  }
+  .feature-text {
+    flex: 1;
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+      margin-top: 0;
+    }
+  }
+}
+.cta-section {
+  background-color: #f3f1ee;
+  border-radius: 15px;
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 15px 0 30px;
+  }
+}

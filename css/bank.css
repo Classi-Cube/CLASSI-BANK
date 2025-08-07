@@ -1,0 +1,165 @@
+@charset "UTF-8";
+.lower-hero {
+  background-color: #315dfab3;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  .lower-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .lower-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+}
+/* メインコンテンツエリア */
+.lower-main-content {
+  padding: 80px 0;
+}
+/* 幅が狭いコンテナ */
+.container.narrow {
+  max-width: 800px;
+}
+/* 各セクションのタイトル */
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #d14f97;
+    border-radius: 2px;
+  }
+}
+/* リード文エリア */
+.lead-text-area {
+  text-align: center;
+  margin-bottom: 80px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+}
+/* 3つのメリットセクション */
+.merit-section {
+  margin-bottom: 100px;
+  .merit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  .merit-card {
+    text-align: center;
+    .merit-icon img {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+    }
+  }
+}
+/* 口座開設の流れセクション */
+.flow-section {
+  margin-bottom: 100px;
+  .flow-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      bottom: 40px;
+      left: 40px;
+      width: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+  .flow-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    + .flow-item {
+      margin-top: 60px;
+    }
+    .flow-step-num {
+      background-color: #315dfa;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .flow-image {
+      flex: 0 0 50px;
+      img {
+        width: 100%;
+      }
+    }
+    .flow-text {
+      h4 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+      p {
+        line-height: 1.7;
+        color: #555;
+      }
+    }
+  }
+}
+/* CTA（行動喚起）セクション */
+.cta-section {
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  padding: 60px;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 15px 0 30px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #d14f97;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover {
+      background-color: #315dfa;
+      transform: translateY(-5px);
+    }
+  }
+}
